@@ -1,3 +1,4 @@
+import { HomeServiceService } from './../home-service.service';
 import { Component, OnInit } from '@angular/core';
 import {Name} from './home';
 
@@ -11,7 +12,7 @@ export class HomeComponent implements OnInit {
   myname: Name={
     name: "Disha!"
   }
-  constructor() { }
+  constructor(private HomeService: HomeServiceService) { }
 
   ngOnInit(): void {
   }
